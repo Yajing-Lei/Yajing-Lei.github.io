@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雷雅京的个人主页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 3px solid #ddd;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 26px;
+            color: #333;
+        }
+        .contact-info {
+            font-size: 14px;
+            color: #666;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            border-left: 5px solid #0073e6;
+            padding-left: 10px;
+            color: #333;
+            font-size: 22px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .skills, .languages {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills li, .languages li {
+            background: #0073e6;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            margin: 5px;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 头像和基本信息 -->
+        <div class="header">
+            <img src="Yancy.png" alt="雷雅京的照片">  <!-- 替换 'Yancy.png' 为你的照片路径 -->
+            <div>
+                <h1>雷雅京</h1>
+                <p class="contact-info">
+                    📱 微信：+86 13125191698 | 📧 邮箱：yajing000420@163.com <br>
+                    ☎️ 电话：+1 3109525602 | +86 13125191698
+                </p>
+            </div>
+        </div>
+
+        <!-- 教育背景 -->
+        <div class="section">
+            <h2>教育背景</h2>
+            <p><strong>南加州大学</strong> - 电气工程硕士 (2023.01-2025.01)</p>
+            <p><strong>武汉科技大学</strong> - 冶金工程本科 (2018.09-2022.06)</p>
+        </div>
+
+        <!-- 实习经历 -->
+        <div class="section">
+            <h2>实习经历</h2>
+            <p><strong>中国宝武钢铁集团</strong> - 实习生 (2024.05-2024.07)</p>
+            <ul>
+                <li>深入参与烧结、气体脱硫和脱硝工艺的实际操作，积累现场实践经验</li>
+                <li>观察炼钢流程，掌握高炉操作程序及工厂整体工作流程</li>
+            </ul>
+        </div>
+
+        <!-- 项目经历 -->
+        <div class="section">
+            <h2>项目经历</h2>
+
+            <!-- 优化算法对神经网络的泛化能力影响研究 -->
+            <p><strong>优化算法对神经网络的泛化能力影响研究 (2024.11-2024.12)</strong></p>
+            <ul>
+                <li>使用CIFAR-10数据集，比较Adam、SGD和L-BFGS等优化算法的效果</li>
+                <li>开发并测试卷积神经网络（CNN），在训练和测试中取得超过80%的准确率</li>
+                <li>分析不同优化方法在泛化能力、计算效率和噪声鲁棒性上的差异</li>
+            </ul>
+
+            <!-- 城市声音分类 - EE599 课程项目 -->
+            <p><strong>城市声音分类 - EE599 课程项目 (2024.10-2024.12)</strong></p>
+            <ul>
+                <li>使用UrbanSound8K数据集，开发监督、半监督和无监督学习模型</li>
+                <li>采用Mel频率倒谱系数（MFCCs）进行特征提取，提升模型识别准确率</li>
+                <li>随机森林模型在测试集中实现78.13%的准确率，F1分数为0.7794</li>
+            </ul>
+
+            <!-- 机器学习项目 - 笔记本价格预测 -->
+            <p><strong>机器学习项目 - 笔记本价格预测 (2024.06-2024.07)</strong></p>
+            <ul>
+                <li>使用Python完成数据预处理、特征工程和模型开发</li>
+                <li>实现支持向量机（SVM）、神经网络和随机森林等模型进行预测</li>
+                <li>比较模型性能（RMSE、MAE等），最终选用支持向量回归（SVR）模型，R²=0.84</li>
+            </ul>
+
+            <!-- TrojanMap 项目 - 地理信息系统开发 -->
+            <p><strong>TrojanMap 项目 - 地理信息系统开发 (2024.04-2024.05)</strong></p>
+            <ul>
+                <li>使用C++开发地理信息系统，模拟并查询南加州大学及其周边地图</li>
+                <li>实现核心数据结构（Node和TrojanMap类）以表示地图位置和路径，支持自动补全、基于类别的搜索和位置查询</li>
+                <li>使用Dijkstra和Bellman-Ford算法计算节点间的最短路径，确保实时导航的高效性</li>
+                <li>集成动态规划和广度优先搜索（BFS）用于循环检测，并应用并查集进行高效的连通性检查</li>
+                <li>采用暴力法、回溯法和2-opt优化技术解决旅行商问题（TSP），路径优化效率提高了30%</li>
+            </ul>
+
+            <!-- 复合纳米材料 CuO/Cu2O@PPy 用于污染物降解 -->
+            <p><strong>复合纳米材料 CuO/Cu2O@PPy 用于污染物降解 (2022.02-2022.06)</strong></p>
+            <ul>
+                <li>设计并制备CuO/Cu2O@PPy复合纳米材料，用于污染物降解研究，重点研究其在环境治理中的应用效果</li>
+                <li>实验所得最好抗菌率高达98%</li>
+            </ul>
+
+            <!-- 氧化石墨烯/ZnO 纳米棒阵列无酶葡萄糖传感电极的制备与性能研究 -->
+            <p><strong>氧化石墨烯/ZnO 纳米棒阵列无酶葡萄糖传感电极的制备与性能研究 (2020.02-2021.05)</strong></p>
+            <ul>
+                <li>采用微波水热合成法，在不锈钢表面制备氧化石墨烯/ZnO纳米棒阵列（GO/ZnO NRs），作为无酶葡萄糖传感电极</li>
+            </ul>
+        </div>
+
+        <!-- 论文发表 -->
+        <div class="section">
+            <h2>论文发表</h2>
+            <p>梁旭, 韩露, 雷雅京, 等. 基于氧化石墨烯/ZnO纳米阵列的无酶葡萄糖传感器[J]. 材料导报, 2022</p>
+        </div>
+
+        <!-- 技能 -->
+        <div class="section">
+            <h2>技能</h2>
+            <ul class="skills">
+                <li>Python</li>
+                <li>C++</li>
+                <li>SQL</li>
+                <li>CAD绘图</li>
+                <li>MATLAB</li>
+                <li>实验设备：SEM, 紫外可见光光度计</li>
+            </ul>
+        </div>
+
+        <!-- 语言 -->
+        <div class="section">
+            <h2>语言</h2>
+            <ul class="languages">
+                <li>英语：熟练听说，良好读写</li>
+                <li>普通话：母语水平</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
